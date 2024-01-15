@@ -1,5 +1,5 @@
 
-Cryptocurrency Clustering - UW FinTech Bootcamp Challenge, Module 10
+Cryptocurrency Clustering - Module - 19
 This project employs K-Means clustering, an unsupervised learning method, to categorize cryptocurrencies based on their performance. The aim is to generate recommendations for profitable portfolios.
 
 Data Sources
