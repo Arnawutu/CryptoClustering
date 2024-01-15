@@ -8,19 +8,19 @@ crypto_market_data.csv - This file contains market data for various cryptocurren
 Overview
 Initially, I utilize the elbow curve technique with normalized data to determine the most suitable k value for the K-Means algorithm, which incorporates all features from the dataset.
 
-![Elbow curve line plot showing a value of 1 for k to be optimal for the dataset with all features](../Resources/Images/Elbow_Curve.png)
+![Elbow curve line plot showing a value of 1 for k to be optimal for the dataset with all features](Crypto_Clustering/Resources/Images/Elbow_Curve.png)
 
 
 Next, I apply the identified optimal k value to train and forecast the K-Means model, resulting in four distinct cryptocurrency clusters. The clusters displayed substantial inertia, prompting a review of the number of features.
 
-![A scatter plot showing 4 clusters with heavy inertia](../Resources/Images/Scatter_Plot_OG.png)
+![A scatter plot showing 4 clusters with heavy inertia](Crypto_Clustering/Resources/Images/Scatter_Plot_OG.png)
 
 The PCA data is then used to re-calculate the ideal k value for the K-Means model.
-![Elbow curve line plot from the PCA data that shows 4 to be the optimal k value](../Resources/Images/Elbow_Curve_PCA.png)
+![Elbow curve line plot from the PCA data that shows 4 to be the optimal k value](Crypto_Clustering/Resources/Images/Elbow_Curve_PCA.png)
 
 In the final step, using the PCA-determined optimal k value, I plot the newly formed clusters.
 
-![Scatter plot showing 4 low inertia clusters generated using the PCA dataframe](../Resources/Images/Scatter_Plot_PCA.png)
+![Scatter plot showing 4 low inertia clusters generated using the PCA dataframe](Crypto_Clustering/Resources/Images/Scatter_Plot_PCA.png)
 
 Technical Tools
 This project is developed in Python 3.7 and run through JupyterLab within a conda development environment.
